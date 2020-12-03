@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/remove_filters"
+        android:icon="@drawable/ic_remove_filters"
+        android:title="@string/remove_filters"
+        app:showAsAction="ifRoom"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/categories"
+        android:icon="@drawable/ic_add_filters"
+        android:title="@string/categories_menu_text"
+        app:showAsAction="always|withText">
+
+        <menu>
+            <group
+                android:id="@+id/categories_group"
+                android:checkableBehavior="all">
+                <item
+                    android:id="@+id/category_favourite"
+                    android:title="@string/category_favourites"
+                    android:orderInCategory="0" />
+                <item
+                    android:id="@+id/category_normal"
+                    android:icon="@drawable/type_normal"
+                    android:title=""
+                    android:orderInCategory="1" />
+                <item
+                    android:id="@+id/category_fire"
+                    android:icon="@drawable/type_fire"
+                    android:title=""
+                    android:orderInCategory="2" />
+                <item
+                    android:id="@+id/category_water"
+                    android:icon="@drawable/type_water"
+                    android:title=""
+                    android:orderInCategory="3" />
+                <item
+                    android:id="@+id/category_electric"
+                    android:icon="@drawable/type_electric"
+                    android:title=""
+                    android:orderInCategory="4" />
+                <item
+                    android:id="@+id/category_grass"
+                    android:icon="@drawable/type_grass"
+                    android:title=""
+                    android:orderInCategory="5" />
+                <item
+                    android:id="@+id/category_ice"
+                    android:icon="@drawable/type_ice"
+                    android:title=""
+                    android:orderInCategory="6" />
+                <item
+                    android:id="@+id/category_fighting"
+                    android:icon="@drawable/type_fighting"
+                    android:title=""
+                    android:orderInCategory="7" />
+                <item
+                    android:id="@+id/category_poison"
+                    android:icon="@drawable/type_poison"
+                    android:title=""
+                    android:orderInCategory="8" />
+                <item
+                    android:id="@+id/category_ground"
+                    android:icon="@drawable/type_ground"
+                    android:title=""
+                    android:orderInCategory="9" />
+                <item
+                    android:id="@+id/category_flying"
+                    android:icon="@drawable/type_flying"
+                    android:title=""
+                    android:orderInCategory="10" />
+                <item
+                    android:id="@+id/category_psychic"
+                    android:icon="@drawable/type_psychic"
+                    android:title=""
+                    android:orderInCategory="11" />
+                <item
+                    android:id="@+id/category_bug"
+                    android:icon="@drawable/type_bug"
+                    android:title=""
+                    android:orderInCategory="12" />
+                <item
+                    android:id="@+id/category_rock"
+                    android:icon="@drawable/type_rock"
+                    android:title=""
+                    android:orderInCategory="13" />
+                <item
+                    android:id="@+id/category_ghost"
+                    android:icon="@drawable/type_ghost"
+                    android:title=""
+                    android:orderInCategory="14" />
+                <item
+                    android:id="@+id/category_dragon"
+                    android:icon="@drawable/type_dragon"
+                    android:title=""
+                    android:orderInCategory="15" />
+                <item
+                    android:id="@+id/category_steel"
+                    android:icon="@drawable/type_steel"
+                    android:title=""
+                    android:orderInCategory="16" />
+                <item
+                    android:id="@+id/category_dark"
+                    android:icon="@drawable/type_dark"
+                    android:title=""
+                    android:orderInCategory="17" />
+                <item
+                    android:id="@+id/category_fairy"
+                    android:icon="@drawable/type_fairy"
+                    android:title=""
+                    android:orderInCategory="18" />
+            </group>
+        </menu>
+    </item>
+</menu>
