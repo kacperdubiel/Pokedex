@@ -12,14 +12,15 @@
         android:padding="4dp">
 
         <ImageView
-            android:id="@+id/pokemonIV"
+            android:id="@+id/pokemonInfoIV"
             android:layout_width="120dp"
             android:layout_height="120dp"
+            android:background="@drawable/back"
+            android:contentDescription="@string/pokemon_main_picture_description"
+            android:padding="4dp"
             android:src="@drawable/pokemon_bulbasaur_1"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:background="@drawable/back"
-            android:padding="4dp" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/favouriteIV"
@@ -27,6 +28,7 @@
             android:layout_height="44dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="4dp"
+            android:contentDescription="@string/pokemon_favourite_icon_description"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/icon_black_heart" />
@@ -41,7 +43,7 @@
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/favouriteIV"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/pokemonIV"
+            app:layout_constraintStart_toEndOf="@+id/pokemonInfoIV"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -54,7 +56,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/favouriteIV"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/pokemonIV"
+            app:layout_constraintStart_toEndOf="@+id/pokemonInfoIV"
             app:layout_constraintTop_toBottomOf="@+id/pokedexIdTV" />
 
         <LinearLayout
@@ -68,22 +70,24 @@
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/pokemonIV"
+            app:layout_constraintStart_toEndOf="@+id/pokemonInfoIV"
             app:layout_constraintTop_toBottomOf="@+id/pokemonNameTV"
             tools:weightSum="1">
 
             <ImageView
-                android:id="@+id/firstTypeIV"
+                android:id="@+id/firstTypeInfoIV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
+                android:contentDescription="@string/first_pokemon_type_description"
                 app:srcCompat="@drawable/type_grass" />
 
             <ImageView
-                android:id="@+id/secondTypeIV"
+                android:id="@+id/secondTypeInfoIV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
+                android:contentDescription="@string/second_pokemon_type_description"
                 tools:srcCompat="@drawable/type_poison" />
         </LinearLayout>
 

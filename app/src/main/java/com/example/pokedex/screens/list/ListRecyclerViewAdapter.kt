@@ -62,12 +62,12 @@ class ListRecyclerViewAdapter(
     }
 
     class ListRecycleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val pokemonIV: ImageView = itemView.pokemonIV
+        val pokemonIV: ImageView = itemView.pokemonInfoIV
         val pokedexIdTV: TextView = itemView.pokedexIdTV
         val pokemonNameTV: TextView = itemView.pokemonNameTV
         val favouriteIV: ImageView = itemView.favouriteIV
-        val firstTypeIV: ImageView = itemView.firstTypeIV
-        val secondTypeIV: ImageView = itemView.secondTypeIV
+        val firstTypeIV: ImageView = itemView.firstTypeInfoIV
+        val secondTypeIV: ImageView = itemView.secondTypeInfoIV
 
         fun initialize(item: Pokemon, action: OnListItemClickListener) {
             itemView.setOnClickListener {

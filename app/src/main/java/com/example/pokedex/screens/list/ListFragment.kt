@@ -108,7 +108,9 @@ class ListFragment : Fragment(), OnListItemClickListener {
     }
 
     override fun onItemClick(item: Pokemon, position: Int) {
-        findNavController().navigate(R.id.action_listFragment_to_detailsViewPagerFragment)
+        val action = ListFragmentDirections.actionListFragmentToDetailsViewPagerFragment(item.id)
+
+        findNavController().navigate(action)
     }
 
     override fun onFavouriteClick(item: Pokemon, position: Int) {

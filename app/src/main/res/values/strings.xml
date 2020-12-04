@@ -26,4 +26,24 @@
     <string name="remove_filters">Remove all filters</string>
     <string name="example_pokemon_name">Bulbasaur</string>
     <string name="example_pokedex_id">#001</string>
+    <string name="pokemon_iv_description">Pokemon picture</string>
+    <string name="pokemon_first_type_description">Pokemon first type</string>
+    <string name="pokemon_second_type_description">Pokemon second type</string>
+    <string name="prev_button_text"><![CDATA[<]]></string>
+    <string name="next_button_text"><![CDATA[>]]></string>
+    <string name="pokemon_gallery_picture_desc">Pokemon gallery picture</string>
+    <string name="example_attack">Tackle</string>
+    <string name="attack_pp">PP: %s</string>
+    <string name="attack_acc">Acc: %s</string>
+    <string name="attack_level">Level: %s</string>
+    <string name="attack_power">Power: %s</string>
+    <string name="attack_type_description">Attack type</string>
+    <string name="example_level_text">level</string>
+    <string name="example_power_text">power</string>
+    <string name="example_pp_text">pp</string>
+    <string name="example_acc_text">acc</string>
+    <string name="pokemon_favourite_icon_description">Pokemon favourite icon</string>
+    <string name="pokemon_main_picture_description">Pokemon main picture</string>
+    <string name="first_pokemon_type_description">First pokemon type</string>
+    <string name="second_pokemon_type_description">Second pokemon type</string>
 </resources>

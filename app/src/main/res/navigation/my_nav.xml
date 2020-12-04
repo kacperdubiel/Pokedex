@@ -29,8 +29,8 @@
             android:id="@+id/action_listFragment_to_detailsViewPagerFragment"
             app:destination="@id/detailsViewPagerFragment"
             app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"
             app:popUpTo="@id/listFragment" />
     </fragment>
@@ -38,5 +38,10 @@
         android:id="@+id/detailsViewPagerFragment"
         android:name="com.example.pokedex.screens.details.DetailsViewPagerFragment"
         android:label="fragment_details_view_pager"
-        tools:layout="@layout/fragment_details_view_pager" />
+        tools:layout="@layout/fragment_details_view_pager">
+        <argument
+            android:name="pokemonId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
 </navigation>
