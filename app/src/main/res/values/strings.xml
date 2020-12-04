@@ -1,26 +1,6 @@
 <resources>
     <string name="app_name">Pokedex</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="category_favourites">Only favourites</string>
-    <string name="category_normal">Normal</string>
-    <string name="category_fire">Fire</string>
-    <string name="category_water">Water</string>
-    <string name="category_electric">Electric</string>
-    <string name="category_grass">Grass</string>
-    <string name="category_ice">Ice</string>
-    <string name="category_fighting">Fighting</string>
-    <string name="category_poison">Poison</string>
-    <string name="category_ground">Ground</string>
-    <string name="category_flying">Flying</string>
-    <string name="category_psychic">Psychic</string>
-    <string name="category_bug">Bug</string>
-    <string name="category_rock">Rock</string>
-    <string name="category_ghost">Ghost</string>
-    <string name="category_dragon">Dragon</string>
-    <string name="category_steel">Steel</string>
-    <string name="category_dark">Dark</string>
-    <string name="category_fairy">Fairy</string>
     <string name="categories_menu_text">Categories</string>
     <string name="pokedex_splash_screen_desc">Pokedex splash screen</string>
     <string name="remove_filters">Remove all filters</string>
@@ -46,4 +26,8 @@
     <string name="pokemon_main_picture_description">Pokemon main picture</string>
     <string name="first_pokemon_type_description">First pokemon type</string>
     <string name="second_pokemon_type_description">Second pokemon type</string>
+    <string name="info_tab_name">Info</string>
+    <string name="gallery_tab_name">Gallery</string>
+    <string name="attacks_tab_name">Attacks</string>
+
 </resources>

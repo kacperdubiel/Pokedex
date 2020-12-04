@@ -26,21 +26,26 @@ class DetailsViewPagerFragment : Fragment() {
 
         val pokemon = Data.pokemons[args.pokemonId]
         val fragmentList = arrayListOf(
-            InfoScreen(pokemon),
-            GalleryScreen(pokemon),
-            AttacksScreen(pokemon)
+                InfoScreen(pokemon),
+                GalleryScreen(pokemon),
+                AttacksScreen(pokemon)
         )
 
         val adapter = DetailsViewPagerAdapter(
-            fragmentList,
-            requireActivity().supportFragmentManager,
-            lifecycle
+                fragmentList,
+                requireActivity().supportFragmentManager,
+                lifecycle
         )
 
         view.detailsViewPager.adapter = adapter
 
+
+        val infoTabName = context?.getString(R.string.info_tab_name)
+        val galleryTabName = context?.getString(R.string.gallery_tab_name)
+        val attacksTabName = context?.getString(R.string.attacks_tab_name)
+
         val tabLayout = view.tab_layout
-        val tabTitles = listOf("Info", "Gallery", "Attacks")
+        val tabTitles = listOf(infoTabName, galleryTabName, attacksTabName)
         TabLayoutMediator(tabLayout, view.detailsViewPager) { tab, position ->
             tab.text = tabTitles[position]
         }.attach()
