@@ -66,7 +66,7 @@ class Data {
                 PokemonAttack(33, "Dream Eater", elementTypes[10], 38, 100, 100, 15),
                 PokemonAttack(34, "Ice Punch", elementTypes[5], 31, 75, 100, 15),
                 PokemonAttack(35, "Body Slam", elementTypes[0], 39, 85, 100, 15),
-                PokemonAttack(36, "Blizzard", elementTypes[5], 58, 120, 90, 5),
+                PokemonAttack(36, "Blizzard", elementTypes[5], 58, 120, 90, 5)
         )
 
         val pokemons: ArrayList<Pokemon> = arrayListOf(
